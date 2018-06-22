@@ -20,7 +20,7 @@ Manually added bugs are corrected in the [system-puzzle](https://github.com/Insi
 
 ## Usage Example
 Step 1: Add items for sell
-![alt text]()
+![alt text](https://github.com/liouvetren/system-puzzle/images/tut0.png)
 Step 2: Click Submit
 
 Step 3:
