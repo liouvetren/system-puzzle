@@ -1,5 +1,13 @@
-# system-puzzle
+# System-Puzzle
 For solving Insight Program Puzzle
+
+## Table of Contents
+1. [Summary](README.md##Summary)
+2. [Usage](README.md##Usage)
+3. [API](README.md##API)
+4. [Usage Example](README.md##Usage-Example)
+5. [Debug History](README.md##Debug-History)
+
 ## Summary
 
 Manually added bugs are corrected in the [system-puzzle](https://github.com/InsightDataScience/systems-puzzle). In addition, **search**, **edit**, **delete** features have been added.
@@ -20,7 +28,7 @@ Manually added bugs are corrected in the [system-puzzle](https://github.com/Insi
 
 ## Usage Example
 Step 1: Add items for sell
-![alt text](images/tut0.png )
+![alt text](images/tut0.png =250x250)
 
 Step 2: Click 'Enter Item'
 ![alt text](images/tut1.png )
@@ -53,7 +61,7 @@ Step 9: Use web url for search (/search/apple)
 
 ![alt text](images/tut8.png )
 
-## Debug Log
+## Debug History
 Following the instructions in the original repository, database and nginx is initialized successfully.  However, localhost:8080 is not available
 
 > This site can't be reached
