@@ -2,23 +2,23 @@
 For solving Insight Program Puzzle
 
 ## Table of Contents
-1. [Summary](README.md##Summary)
-2. [Usage](README.md##Usage)
-3. [API](README.md##API)
-4. [Usage Example](README.md##Usage-Example)
-5. [Debug History](README.md##Debug-History)
+1. [Summary](README.md#Summary)
+2. [Usage](README.md#Usage)
+3. [API](README.md#API)
+4. [Usage Example](README.md#Usage-Example)
+5. [Debug History](README.md#Debug-History)
 
-## Summary
+# Summary
 
 Manually added bugs are corrected in the [system-puzzle](https://github.com/InsightDataScience/systems-puzzle). In addition, **search**, **edit**, **delete** features have been added.
 
-## Usage
+# Usage
 * The service runs on port 8080
 * Initialization step of PostgreSQL database can be skipped. Directly run the system with `docker-compose up -d`
 * Type in `localhost:8080` in any browser to start the app
 * Close the app with `docker-compose down`
 
-## API
+# API
 * `/` is the main page and is used for entering items for sell into the database. Once one entry is entered, it redirects to `/success`. The main page contains links to useful tools.
 * `/success` counts the number of items in the cart for sell so far and display them as a table. *Edit* tags redirect to the edit page of the corresponding items.
 * `/items/<id>`is the edit page of individual item. *Save* button saves the changes of your edit; *Delete* button removes the entry from database.
@@ -26,7 +26,7 @@ Manually added bugs are corrected in the [system-puzzle](https://github.com/Insi
 * `/search` provides a search for item names in the database and returns all mached result as a table.
 * `/search/<item_name>` provides an alternative to search for item name from web url.
 
-## Usage Example
+# Usage Example
 Step 1: Add items for sell
 ![alt text](images/tut0.png =250x250)
 
@@ -61,7 +61,7 @@ Step 9: Use web url for search (/search/apple)
 
 ![alt text](images/tut8.png )
 
-## Debug History
+# Debug History
 Following the instructions in the original repository, database and nginx is initialized successfully.  However, localhost:8080 is not available
 
 > This site can't be reached
