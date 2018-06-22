@@ -20,12 +20,21 @@ Manually added bugs are corrected in the [system-puzzle](https://github.com/Insi
 
 ## Usage Example
 Step 1: Add items for sell
-![alt text](https://github.com/liouvetren/system-puzzle/blob/master/images/tut0.png)
+![alt text](images/tut0.png)
 Step 2: Click Submit
-
-Step 3:
-
-Step 4:
+![alt text](images/tut1.png)
+Step 3: Edit item
+![alt text](images/tut2.png)
+Step 4: Edit item quantity
+![alt text](images/tut3.png)
+Step 5: Click Save
+![alt text](images/tut4.png)
+Step 6: Remove Item (Click Delete)
+![alt text](images/tut5.png)
+Step 7: Go to /search for searching items
+![alt text](images/tut6.png)
+Step 8: Use web url for search (/search/apple)
+![alt text](images/tut7.png)
 
 ## Debug Log
 Following the instructions in the original repository, database and nginx is initialized successfully.  However, localhost:8080 is not available
