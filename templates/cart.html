@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <h1> Cart  </h1>
+        <h2> {{ description }} </h2>
+        <table>
+            <tr>ID</tr>
+            <tr>Name</tr>
+            <tr>Quantity</tr>
+            <tr>Description</tr>
+            <tr>Date Added</tr>
+
+
+            {% for item in items %}
+                <tr>
+                    <td> {{ item.id }} </td>
+                    <td> {{ item.name }} </td>
+                    <td> {{ item.quantity }} </td>
+                    <td> {{ item.description }} </td>
+                    <td> {{ item.date_added.strftime("%D-%T") }} </td>
+                    <td> <a href={{url_for("edit_item",id=item.id)}}>Edit</a> </td>
+                </tr>
+            {% endfor %}
+        </table>
+        <a href={{url_for('add_item')}}>Back</a>
+    </body>
+</html>

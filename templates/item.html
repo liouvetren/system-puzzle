@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <h1> Item ID#{{ id }} </h1>
+        <h2> Edit item entry </h2>
+        <form method="POST" >
+            {{ form.csrf_token }} 
+            {{ form.name.label }} {{ form.name(size=20) }} <br>
+            {{ form.quantity.label }} {{ form.quantity(size=4) }} <br>
+            {{ form.description.label }} {{ form.description(size=4) }} <br>
+            <input type="submit" name='submit' value="Save">
+            <input type="submit" name='submit' value="Delete">
+        </form>
+        <a href={{url_for('add_item')}}>Back</a>
+    </body>
+</html>

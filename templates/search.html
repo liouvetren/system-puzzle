@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <h1> Search </h1>
+        <h2> Enter Item Name </h2>
+        <form method="POST" >
+            {{ form.csrf_token }} 
+            {{ form.name.label }} {{ form.name(size=20) }} <br>
+            <input type="submit" value="Search">
+        </form>
+        <a href={{url_for('add_item')}}>Back</a>
+    </body>
+</html>

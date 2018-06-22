@@ -1,0 +1,28 @@
+>> docker-compose up
+
+Starting systems-puzzle_db_1 ... done
+Starting systems-puzzle_flaskapp_1 ... done
+Starting systems-puzzle_nginx_1    ... error
+
+ERROR: for systems-puzzle_nginx_1  Cannot start service nginx: driver failed programming external connectivity on endpoint systems-puzzle_nginx_1 (95a4aa1c0f4b1fa48f6c58752c1a7323301aefc433d98188eb0590b1c5809d7f): Error starting userland proxy: Bind for 0.0.0.0:80: unexpected error (Failure EADDRINUSE)
+
+ERROR: for nginx  Cannot start service nginx: driver failed programming external connectivity on endpoint systems-puzzle_nginx_1 (95a4aa1c0f4b1fa48f6c58752c1a7323301aefc433d98188eb0590b1c5809d7f): Error starting userland proxy: Bind for 0.0.0.0:80: unexpected error (Failure EADDRINUSE)
+ERROR: Encountered errors while bringing up the project.
+
+Trial: turn off firewall (fail)
+-->port 80 on host is used
+
+Fix1: change ports: 80:8080 to 8080:80
+
+----------------------------------------
+
+>> docker-compose up
+access localhost:8080 returns bad gateway error
+
+"Containers connected to the same user-defined bridge network automatically expose all ports to each other, and no ports to the outside world. "
+add "expose: 80"
+---> can access but not configured correctly
+
+----------------------------------------
+
+
