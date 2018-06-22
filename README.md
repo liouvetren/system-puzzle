@@ -2,11 +2,11 @@
 For solving Insight Program Puzzle
 
 ## Table of Contents
-1. [Summary](README.md#Summary)
-2. [Usage](README.md#Usage)
-3. [API](README.md#API)
-4. [Usage Example](README.md#Usage-Example)
-5. [Debug History](README.md#Debug-History)
+1. [Summary](README.md#summary)
+2. [Usage](README.md#usage)
+3. [API](README.md#api)
+4. [Usage Example](README.md#usage-example)
+5. [Debug History](README.md#debug-history)
 
 # Summary
 
@@ -28,7 +28,7 @@ Manually added bugs are corrected in the [system-puzzle](https://github.com/Insi
 
 # Usage Example
 Step 1: Add items for sell
-![alt text](images/tut0.png =250x250)
+![alt text](images/tut0.png)
 
 Step 2: Click 'Enter Item'
 ![alt text](images/tut1.png )
